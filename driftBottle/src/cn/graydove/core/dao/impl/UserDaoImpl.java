@@ -16,7 +16,7 @@ public class UserDaoImpl implements UserDao{
 	public void getConn() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://cdb-qx80diyu.cd.tencentcdb.com:10017/java?useSSL=false", "root", "Du87688524");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:8080/java?useSSL=false", "root", "password");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
